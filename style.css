@@ -1,0 +1,109 @@
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /*   height: 100vh; */
+  background-color: #f0f0f0;
+  margin: 20px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+#calculators {
+  display: flex; /* This turns the container into a flex container */
+  flex-wrap: wrap; /* This allows items to wrap to the next line if there's not enough space */
+  justify-content: start; /* Aligns items to the start of the container */
+  gap: 20px; /* Adds some space between the calculators */
+}
+
+.calculator {
+  width: 430px;
+  background-color: #f5f5dc;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  /* Removed some styles that are now unnecessary */
+}
+
+.display {
+  background-color: #000;
+  color: #fff;
+  font-size: 2em;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  text-align: right;
+}
+
+button {
+  width: 65px;
+  height: 65px;
+  margin: 7px;
+  border: none;
+  border-radius: 50%;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #333333;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #a5a5a5;
+}
+
+button:active {
+  background-color: #888;
+}
+
+button.operator {
+  background-color: #ff9500;
+}
+
+button.operator:hover {
+  background-color: #ff9500;
+}
+
+button.clear,
+button.equals {
+  background-color: #ff9500;
+}
+
+button.clear:hover,
+button.equals:hover {
+  background-color: #a2a2a1;
+}
+
+.history {
+  color: #000;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: right;
+  position: relative;
+  right: 10px;
+  height: 1.5em;
+  overflow: hidden;
+}
+.add-btn {
+  background-color: #588157;
+}
+.add-btn:hover {
+  background-color: #023047;
+}
+/* Additional styling to handle the specific layout or features */
+.close-btn-div{
+  display:flex;
+  justify-content:flex-end;
+  font-size:1.5em;
+  margin-bottom:10px;
+}
+.close-btn {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: grey;
+  color: #ffffff;
+  cursor: pointer;
+}
